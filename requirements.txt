@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+asyncpg
+python-dotenv
+httpx
+mecab-python3
+redis
+celery[redis]
+qdrant-client
+openai
+python-jose[cryptography]
