@@ -1,4 +1,4 @@
-fastapi
+fastapi[standard]
 uvicorn[standard]
 sqlmodel
 asyncpg
@@ -10,3 +10,9 @@ celery[redis]
 qdrant-client
 openai
 python-jose[cryptography]
+pydantic
+langchain_community
+langchain_openai
+langchain_qdrant
+qdrant_client
+groq
