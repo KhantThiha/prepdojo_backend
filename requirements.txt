@@ -16,3 +16,10 @@ langchain_openai
 langchain_qdrant
 qdrant_client
 groq
+supabase
+langgraph
+langchain-core
+langchain-groq
+langsmith
+fastapi-guard
+python-jose[cryptography]

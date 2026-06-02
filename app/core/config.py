@@ -16,7 +16,17 @@ class Settings(BaseSettings):
 
     # Model Configuration
     embedding_model_name: str = "text-embedding-3-large"
+
+    supabase_url: str = os.getenv("SUPABASE_URL")
+    supabase_key: str = os.getenv("SUPABASE_KEY")
+    supabase_jwt_secret: str = os.getenv("SUPABASE_JWT_SECRET")
     
+    LANGSMITH_TRACING: str =os.getenv("LANGSMITH_TRACING")
+    LANGSMITH_ENDPOINT: str =os.getenv("LANGSMITH_ENDPOINT")
+    LANGSMITH_API_KEY: str =os.getenv("LANGSMITH_API_KEY")
+    LANGSMITH_PROJECT: str =os.getenv("LANGSMITH_PROJECT")
+    X_CUSTOM_HEADER: str =os.getenv("X_CUSTOM_HEADER")
+    MOCK_MODE: bool = False
     class Config:
         env_file = ".env"
 

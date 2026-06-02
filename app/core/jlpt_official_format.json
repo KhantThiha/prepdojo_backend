@@ -1,0 +1,32 @@
+{
+  "Vocabulary": {
+    "Kanji reading": { "N1": 6, "N2": 5, "N3": 8, "N4": 9, "N5": 12 },
+    "Orthography": { "N1": null, "N2": 5, "N3": 6, "N4": 6, "N5": 8 },
+    "Word formation": { "N1": null, "N2": 5, "N3": null, "N4": null, "N5": null },
+    "Contextually-defined expressions": { "N1": 7, "N2": 7, "N3": 11, "N4": 10, "N5": 10 },
+    "Paraphrases": { "N1": 6, "N2": 5, "N3": 5, "N4": 5, "N5": 5 },
+    "Usage": { "N1": 6, "N2": 5, "N3": 5, "N4": 5, "N5": null }
+    
+  },
+  "Grammar": {
+    "Sentential grammar 1 (Selecting grammar form)": { "N1": 10, "N2": 12, "N3": 13, "N4": 15, "N5": 16 },
+    "Sentential grammar 2 (Sentence composition)": { "N1": 5, "N2": 5, "N3": 5, "N4": 5, "N5": 5 },
+    "Text grammar": { "N1": 5, "N2": 5, "N3": 5, "N4": 5, "N5": 5 }
+  },
+  "Reading": {
+    "Comprehension (Short passages)": { "N1": 4, "N2": 5, "N3": 4, "N4": 4, "N5": 3 },
+    "Comprehension (Mid-size passages)": { "N1": 9, "N2": 9, "N3": 6, "N4": 4, "N5": 2 },
+    "Comprehension (Long passages)": { "N1": 4, "N2": null, "N3": 4, "N4": null, "N5": null },
+    "Integrated comprehension": { "N1": 3, "N2": 2, "N3": null, "N4": null, "N5": null },
+    "Thematic comprehension (Long passages)": { "N1": 4, "N2": 3, "N3": null, "N4": null, "N5": null },
+    "Information retrieval": { "N1": 2, "N2": 2, "N3": 2, "N4": 2, "N5": 1 }
+  },
+  "Listening": {
+    "Task-based comprehension": { "N1": 6, "N2": 5, "N3": 6, "N4": 8, "N5": 7 },
+    "Point comprehension": { "N1": 7, "N2": 6, "N3": 6, "N4": 7, "N5": 6 },
+    "Summary comprehension": { "N1": 6, "N2": 5, "N3": 3, "N4": null, "N5": null },
+    "Utterance expressions": { "N1": null, "N2": null, "N3": 4, "N4": 5, "N5": 5 },
+    "Quick response": { "N1": 14, "N2": 12, "N3": 9, "N4": 8, "N5": 6 },
+    "Integrated comprehension": { "N1": 4, "N2": 4, "N3": null, "N4": null, "N5": null }
+  }
+}
