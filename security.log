@@ -1,2 +1,0 @@
-[fastapi_guard.handlers.security_headers] 2026-03-20 14:14:21,840 - WARNING - CSP directive 'style-src' contains unsafe sources
-[fastapi_guard] 2026-03-20 14:14:39,168 - INFO - Security pipeline initialized with 17 checks: ['route_config', 'emergency_mode', 'https_enforcement', 'request_logging', 'request_size_content', 'required_headers', 'authentication', 'referrer', 'custom_validators', 'time_window', 'cloud_ip_refresh', 'ip_security', 'cloud_provider', 'user_agent', 'rate_limit', 'suspicious_activity', 'custom_request']

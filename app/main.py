@@ -1,9 +1,10 @@
 from fastapi import FastAPI,Depends
+from guard import SecurityConfig
 from app.api.v1 import exams, chat
 from app.core.config import settings
 from dotenv import load_dotenv
 from guard.middleware import SecurityMiddleware
-from guard.models import SecurityConfig
+
 from fastapi import Request, Response
 from typing import Optional
 from app.core.security import get_current_user
@@ -61,7 +62,7 @@ config = SecurityConfig(
 
 app.include_router(exams.router, prefix="/api/v1", tags=["exams"])
 app.include_router(chat.router,prefix="/api/v1/chat",tags=["chat"],dependencies=[Depends(get_current_user)])
-app.add_middleware(SecurityMiddleware, config=config)
+#app.add_middleware(SecurityMiddleware, config=config)
 
 @app.get("/")
 async def health():
