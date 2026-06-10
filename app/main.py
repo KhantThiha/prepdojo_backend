@@ -18,6 +18,8 @@ app.add_middleware(
 
 @app.middleware("http")
 async def custom_header_check(request: Request, call_next):
+    if request.method == "OPTIONS":
+        return await call_next(request)
     if request.headers.get("X-Custom-Header") != settings.X_CUSTOM_HEADER:
         return Response("Invalid or missing custom header", status_code=400)
     return await call_next(request)
