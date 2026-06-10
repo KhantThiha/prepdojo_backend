@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     LANGSMITH_API_KEY: str =os.getenv("LANGSMITH_API_KEY")
     LANGSMITH_PROJECT: str =os.getenv("LANGSMITH_PROJECT")
     X_CUSTOM_HEADER: str =os.getenv("X_CUSTOM_HEADER")
+    CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "*")
     MOCK_MODE: bool = False
     class Config:
         env_file = ".env"

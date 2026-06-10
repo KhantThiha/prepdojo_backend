@@ -50,8 +50,8 @@ config = SecurityConfig(
     custom_log_file="security.log",
     rate_limit=30,
     #enforce_https=True,
-    #enable_cors=True,
-    cors_allow_origins=["*"],
+    enable_cors=True,
+    cors_allow_origins=[o.strip() for o in settings.CORS_ORIGINS.split(",")],
     cors_allow_methods=["GET", "POST"],
     cors_allow_headers=["*"],
     #cors_allow_credentials=True,
@@ -62,7 +62,7 @@ config = SecurityConfig(
 
 app.include_router(exams.router, prefix="/api/v1", tags=["exams"])
 app.include_router(chat.router,prefix="/api/v1/chat",tags=["chat"],dependencies=[Depends(get_current_user)])
-#app.add_middleware(SecurityMiddleware, config=config)
+app.add_middleware(SecurityMiddleware, config=config)
 
 @app.get("/")
 async def health():
