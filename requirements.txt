@@ -21,5 +21,4 @@ langgraph
 langchain-core
 langchain-groq
 langsmith
-fastapi-guard
 python-jose[cryptography]
